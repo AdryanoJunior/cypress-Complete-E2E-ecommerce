@@ -1,0 +1,10 @@
+{
+    "userSuccess": {
+      "username": "adryanoqaenginner2@gmail.com",
+      "password": "Junior78$"
+    },
+    "userFail": {
+      "username": "testingqa@gmail.com",
+      "password": "test"
+    }
+  }
