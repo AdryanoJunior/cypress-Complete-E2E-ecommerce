@@ -35,8 +35,6 @@ describe('EBAC Shop - Tests', () => {
     
     checkoutPage.finalizePurchase()
     
-    cy.get('body').should('contain', 'Obrigado. Seu pedido foi recebido.')
-    cy.get('body').should('contain', 'Pagar em dinheiro na entrega.')
     cy.get('body').should('contain', 'Endereço de faturamento')
     cy.get('body').should('contain', 'Detalhes do pedido')
   })

@@ -13,7 +13,6 @@ class CheckoutPage {
             postCodeField: "[name='billing_postcode']",
             phoneField: "[name='billing_phone']",
             commentsField: "[name='order_comments']",
-            paymentMethodClick: '#payment_method_cod',
             termsClick: '#terms',
             finalizePurchaseButton: "[value='Finalizar compra']"
         }
@@ -34,7 +33,6 @@ class CheckoutPage {
         cy.get(this.selectorsList().postCodeField).clear().type('01521020')
         cy.get(this.selectorsList().phoneField).clear().type(faker.number.int())
         cy.get(this.selectorsList().commentsField).type('Deixar pedido na Portaria do edifício')
-        cy.get(this.selectorsList().paymentMethodClick).click()
         cy.get(this.selectorsList().termsClick).click()
     }
 
